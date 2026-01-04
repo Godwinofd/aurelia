@@ -15,9 +15,9 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
       <section className="relative h-[100dvh] min-h-[700px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop" 
-            alt="Luxury Penthouse Interior" 
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
+            alt="Luxury Penthouse Interior"
             className="w-full h-full object-cover animate-scale-in"
           />
           {/* Enhanced Overlay for Maximum Readability */}
@@ -27,7 +27,7 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
         </div>
 
         <div className="relative z-10 container mx-auto px-6 flex flex-col items-center justify-center text-center h-full pt-16">
-          
+
           {/* Eyebrow */}
           <div className="flex items-center gap-4 mb-6 md:mb-8 opacity-0 animate-hero-fade-in-up [animation-delay:200ms]">
             <div className="h-[1px] w-8 md:w-16 bg-aurelia-gold shadow-[0_0_8px_rgba(212,175,55,0.8)]"></div>
@@ -36,7 +36,7 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
             </span>
             <div className="h-[1px] w-8 md:w-16 bg-aurelia-gold shadow-[0_0_8px_rgba(212,175,55,0.8)]"></div>
           </div>
-          
+
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium text-white mb-8 leading-[1.1] tracking-tight drop-shadow-2xl opacity-0 animate-hero-fade-in-up [animation-delay:500ms]">
             Curating the <br className="hidden md:block" />
@@ -50,15 +50,15 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto px-6 opacity-0 animate-hero-fade-in-up [animation-delay:1100ms]">
-            <Button 
-              onClick={() => setPage('properties')} 
-              className="bg-aurelia-gold text-aurelia-navy hover:bg-white border-2 border-aurelia-gold hover:border-white shadow-[0_10px_30px_rgba(0,0,0,0.3)] w-full sm:w-auto min-w-[180px]"
+            <Button
+              onClick={() => setPage('properties')}
+              className="bg-aurelia-gold text-aurelia-navy hover:bg-white hover:text-aurelia-navy border-2 border-aurelia-gold hover:border-white shadow-[0_10px_30px_rgba(0,0,0,0.3)] w-full sm:w-auto min-w-[180px]"
             >
               View Collection
             </Button>
-            <Button 
-              variant="outline" 
-              onClick={() => setPage('contact')} 
+            <Button
+              variant="outline"
+              onClick={() => setPage('contact')}
               className="border-white text-white hover:bg-white hover:text-aurelia-navy backdrop-blur-sm bg-white/5 hover:border-white w-full sm:w-auto min-w-[180px]"
             >
               Partner With Us
@@ -68,8 +68,8 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/50 hidden md:flex flex-col items-center gap-2 opacity-0 animate-fade-in [animation-delay:2000ms]">
-           <span className="text-[10px] uppercase tracking-widest text-white/70">Scroll</span>
-           <div className="w-[1px] h-12 bg-gradient-to-b from-white/20 via-white to-transparent"></div>
+          <span className="text-[10px] uppercase tracking-widest text-white/70">Scroll</span>
+          <div className="w-[1px] h-12 bg-gradient-to-b from-white/20 via-white to-transparent"></div>
         </div>
       </section>
 
@@ -77,29 +77,29 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-6">
           <ScrollReveal>
-            <SectionHeader 
-              eyebrow="Our Expertise" 
-              title="Redefining Property Management" 
+            <SectionHeader
+              eyebrow="Our Expertise"
+              title="Redefining Property Management"
               description="We offer a holistic approach to property management, ensuring landlords maximize returns while guests enjoy unforgettable stays."
             />
           </ScrollReveal>
 
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             {[
-              { 
-                icon: <Key className="w-8 h-8" />, 
-                title: "Full-Service Management", 
-                desc: "End-to-end handling of your property, from marketing to maintenance." 
+              {
+                icon: <Key className="w-8 h-8" />,
+                title: "Full-Service Management",
+                desc: "End-to-end handling of your property, from marketing to maintenance."
               },
-              { 
-                icon: <Star className="w-8 h-8" />, 
-                title: "Premium Guest Experience", 
-                desc: "Concierge-level support, 5-star amenities, and seamless check-ins." 
+              {
+                icon: <Star className="w-8 h-8" />,
+                title: "Premium Guest Experience",
+                desc: "Concierge-level support, 5-star amenities, and seamless check-ins."
               },
-              { 
-                icon: <ShieldCheck className="w-8 h-8" />, 
-                title: "Asset Protection", 
-                desc: "Rigorous vetting, comprehensive insurance, and regular inspections." 
+              {
+                icon: <ShieldCheck className="w-8 h-8" />,
+                title: "Asset Protection",
+                desc: "Rigorous vetting, comprehensive insurance, and regular inspections."
               }
             ].map((item, index) => (
               <ScrollReveal key={index} delay={index * 150} className="group p-8 border border-slate-100 bg-slate-50 hover:bg-white hover:border-slate-200 hover:shadow-xl transition-all duration-500 rounded-sm">
@@ -153,7 +153,7 @@ const Home: React.FC<HomeProps> = ({ setPage }) => {
               ))}
             </div>
           </ScrollReveal>
-          
+
           <div className="mt-8 md:hidden text-center">
             <ScrollReveal delay={300}>
               <Button variant="outline" onClick={() => setPage('properties')} className="border-slate-700 text-white">View All</Button>
